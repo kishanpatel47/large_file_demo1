@@ -1,0 +1,34 @@
+{
+  "name": "grabrn",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.4",
+    "react-native-maps": "^0.15.3",
+    "react-native-vector-icons": "^4.3.0",
+    "react-navigation": "^1.0.0-beta.11"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "jest": "20.0.4",
+    "react-native-cli": "^2.0.1",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

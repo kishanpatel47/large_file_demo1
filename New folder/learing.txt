@@ -1,0 +1,2 @@
+learing point  :-
+https://github.com/Microsoft/vscode-react-native/issues/823 run ios  of react nativr

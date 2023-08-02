@@ -1,0 +1,100 @@
+import {Text, View, TouchableOpacity} from 'react-native';
+import React, {Component} from 'react';
+
+export default class Expandable_Listview extends Component {
+  render() {
+    return (
+      <TouchableOpacity
+        style={{flex: 1, justifyContent: 'center'}}
+        onPress={() => {
+          // alert(item.subtimeshot.time);
+          this.setState({
+            isExpandIndex: this.state.isExpandIndex == index ? -1 : index,
+          });
+        }}>
+        <View style={{marginTop: 20}}>
+          <View
+            style={{
+              alignItems: 'center',
+              flexDirection: 'row',
+              backgroundColor:
+                this.state.isExpandIndex == index
+                  ? colors.bluelight
+                  : colors.Cultured,
+              padding: 5,
+            }}>
+            <Image
+              style={{
+                tintColor:
+                  this.state.isExpandIndex == index
+                    ? colors.Cylindrical_coordinate
+                    : colors.Black,
+              }}
+              source={item.url}></Image>
+            <Text
+              style={{
+                marginLeft: 15,
+                color:
+                  this.state.isExpandIndex == index
+                    ? colors.white
+                    : colors.Black,
+              }}>
+              {item.Slot}
+            </Text>
+            <Text
+              style={{
+                marginLeft: 15,
+                color:
+                  this.state.isExpandIndex == index
+                    ? colors.white
+                    : colors.Black,
+              }}>
+              {item.timeinterval}
+            </Text>
+            <TouchableOpacity
+              style={{flex: 1, justifyContent: 'center'}}
+              onPress={() => {
+                this.setState({
+                  isExpandIndex: this.state.isExpandIndex == index ? -1 : index,
+                });
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}>
+                <Image
+                  style={{
+                    alignSelf: 'flex-end',
+                    tintColor:
+                      this.state.isExpandIndex == index
+                        ? colors.white
+                        : colors.Black,
+                  }}
+                  source={item.url1}></Image>
+              </View>
+            </TouchableOpacity>
+          </View>
+          {this.state.isExpandIndex == index ? (
+            <View
+              style={{
+                //height: this.state.isExpandIndex - index,
+                overflow: 'scroll',
+                backgroundColor:
+                  this.state.isExpandIndex == index
+                    ? colors.bluelight
+                    : colors.Cultured,
+              }}>
+              {this.props.item.subShot.map(item => {
+                <TouchableOpacity>
+                  <Text>{item.Time}</Text>
+                </TouchableOpacity>;
+              })}
+            </View>
+          ) : null}
+        </View>
+      </TouchableOpacity>
+    );
+  }
+}

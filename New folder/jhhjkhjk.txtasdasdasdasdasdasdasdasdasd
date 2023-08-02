@@ -1,0 +1,29 @@
+  Dav india  Rating Problem  
+  
+   1:-  i'm  star  button click  in  and 1 and  2 mintues is working
+   2 :-write review  Problem  
+   3:-  Decrement  button click   item delete
+   4:- any item   click  go to view  Deatlies but  + and  -   - button  click  automatic  delete item
+
+
+
+
+
+
+         // <View style={{ paddingTop: 20 }}>
+              //   <CustomText
+              //     text={
+              //       strings.VERSION +
+              //       ' ' +
+              //       DeviceInfo.getVersion() +
+              //       ' (' +
+              //       DeviceInfo.getBuildNumber() +
+              //       ')'
+              //     }
+              //     customStyle={{
+              //       fontFamily: 'verdana',
+              //       fontWeight: '500',
+              //       color: 'gray',
+              //     }}
+              //   />
+              // </View>

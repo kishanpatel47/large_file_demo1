@@ -1,0 +1,45 @@
+   
+
+
+
+   1 :- i am create  in new  Project  and  run  in cmd from  (npx react-native run-android)
+
+error:-
+
+   * Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 10s
+
+error Failed to install the app. Make sure you have the Android development environment set up: https://reactnative.dev/docs/environment-setup.
+Error: Command failed: gradlew.bat app:installDebug -PreactNativeDevServerPort=8081
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
+> SDK location not found. Define location with an ANDROID_SDK_ROOT environment variable or by setting the sdk.dir path in your project's local properties file at 'D:\TaskProject\Loginscreen\android\local.properties'.
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 10s
+
+    at makeError (D:\TaskProject\Loginscreen\node_modules\execa\index.js:174:9)
+    at D:\TaskProject\Loginscreen\node_modules\execa\index.js:278:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async runOnAllDevices (D:\TaskProject\Loginscreen\node_modules\@react-native-community\cli-platform-android\build\commands\runAndroid\runOnAllDevices.js:109:5)
+    at async Command.handleAction (D:\TaskProject\Loginscreen\node_modules\@react-native-community\cli\build\index.js:192:9)
+info Run CLI with --verbose flag for more details.
+
+
+2:-( i am setup  enverimentsetup variable and jdk path save  but  same  error  and ) * What went wrong:
+Execution failed for task ':react-native-screens:compileDebugKotlin'.
+> Kotlin could not find the required JDK tools in the Java installation 'C:\Program Files (x86)\Java\jre1.8.0_321' used by Gradle. Make sure Gradle is running on a 
+JDK, not JRE.
+
+3:-not setup in jdk path(https://www.geeksforgeeks.org/different-ways-to-change-android-sdk-path-in-android-studio/#:~:text=Click%20on%20Appearance%20and%20Behavior,clicking%20on%20the%20Edit%20option.)
+4:-
